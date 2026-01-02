@@ -17,6 +17,16 @@ A production-grade Python library for computing implied volatilities, enforcing 
 
 ---
 
+## 📊 Example Visualizations
+
+### Volatility Smile
+![Volatility Smile](images/volitility_Smile.png)
+
+### 3D Surface
+![3D Surface](images/volitility_Surface.png)
+
+---
+
 ## 📦 Installation
 
 ### From Source (Development)
