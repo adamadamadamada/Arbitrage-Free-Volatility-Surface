@@ -58,15 +58,14 @@ def cos_pricer(cf, S, K, T, r, option_type='call', N=128, L=10):
     """
     x = np.log(S)
     
-    # Estimate truncation range [a, b]
-    # Simple heuristic based on standard deviation
-    c1 = r * T
-    c2 = 0.0  # Would need to compute from CF for general case
-    c4 = 3.0  # Kurtosis approximation
+    # Truncation range - use forward price as center
+    log_forward = np.log(S) + r * T
     
-    a = c1 - L * np.sqrt(abs(c2) + np.sqrt(abs(c4)))
-    b = c1 + L * np.sqrt(abs(c2) + np.sqrt(abs(c4)))
-    
+    # Estimate variance from CF (approximate)
+    # For lognormal: variance = sigma^2 * T
+    # Use L standard deviations
+    a = log_forward - L * np.sqrt(T)
+    b = log_forward + L * np.sqrt(T)
     k = np.arange(N)
     
     # Payoff coefficients

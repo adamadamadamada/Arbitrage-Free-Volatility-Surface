@@ -152,16 +152,29 @@ class TestCheckAllArbitrage:
     
     def test_clean_data_no_violations(self):
         """Well-behaved data should pass all checks."""
-        data = pd.DataFrame({
-            'strike': [95, 100, 105, 95, 100, 105],
-            'expiry': [0.25, 0.25, 0.25, 0.50, 0.50, 0.50],
-            'call_price': [8.0, 5.0, 2.5, 10.0, 7.0, 4.0],
-            'put_price': [2.5, 4.5, 7.0, 4.0, 6.5, 9.5],
-            'iv': [0.22, 0.20, 0.22, 0.24, 0.22, 0.24],
-        })
-        S, r = 100, 0.05
+        # Use realistic prices that satisfy put-call parity
+        from vol_surface.iv_solver import black_scholes_call, black_scholes_put
         
-        violations = check_all_arbitrage(data, S, r, tol=0.5)  # Loose tolerance
+        S, r = 100, 0.05
+        strikes = [95, 100, 105]
+        expiries = [0.25, 0.50]
+        
+        data_rows = []
+        for T in expiries:
+            for K in strikes:
+                iv = 0.22  # Constant vol
+                call = black_scholes_call(S, K, T, r, iv)
+                put = black_scholes_put(S, K, T, r, iv)
+                data_rows.append({
+                    'strike': K,
+                    'expiry': T,
+                    'call_price': call,
+                    'put_price': put,
+                    'iv': iv
+                })
+        
+        data = pd.DataFrame(data_rows)
+        violations = check_all_arbitrage(data, S, r, tol=1e-3)
         
         assert len(violations['put_call_parity']) == 0
         assert len(violations['butterfly']) == 0

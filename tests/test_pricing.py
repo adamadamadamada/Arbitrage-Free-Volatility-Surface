@@ -292,7 +292,7 @@ class TestEdgeCases:
         
         # Should be very close to S - K*e^(-rT)
         intrinsic = S - K * np.exp(-r * T)
-        assert price > intrinsic
+        assert price >= intrinsic  # Can be equal for very deep ITM
         assert price < S
     
     def test_very_short_time(self):

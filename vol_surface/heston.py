@@ -97,9 +97,13 @@ class HestonModel:
             Call option price
         """
         # Truncation range [a, b] for log-asset price
-        L = 10  # Controls range
-        a = -L * np.sqrt(self.theta * T)
-        b = L * np.sqrt(self.theta * T)
+        # Center around log-forward price
+        log_forward = np.log(S) + r * T
+        L = 12  # Controls range (12 standard deviations)
+        std_dev = np.sqrt(self.theta * T)
+        
+        a = log_forward - L * std_dev
+        b = log_forward + L * std_dev
         
         x = np.log(S)
         k = np.arange(N)
