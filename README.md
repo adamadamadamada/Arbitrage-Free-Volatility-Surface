@@ -25,6 +25,8 @@ A production-grade Python library for computing implied volatilities, enforcing 
 git clone https://github.com/XanderRobbins/Arbitrage-Free-Volitility-Surface.git
 cd volatility-surface-lab
 pip install -e .
+
+**⚠️ Python Version:** This project requires **Python 3.11** for maximum stability. Python 3.13+ has known compatibility issues with NumPy/SciPy.
 ```
 
 ### With Optional Dependencies
@@ -355,7 +357,7 @@ University of Florida | Math, CS, Economics
 - **Heston calibration**: ~5-10s for 100 options (local), ~60s (global)
 - **COS pricing**: ~0.5ms per option (N=128 terms)
 
-*Benchmarked on Apple M1 Pro, Python 3.10*
+*Benchmarked on Windows, Python 3.11*
 
 ---
 
