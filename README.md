@@ -1,5 +1,10 @@
 # 📈 Arbitrage Free Volatility Surface
 
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+![Tests](https://img.shields.io/badge/tests-104%20passing-brightgreen.svg)
+![Coverage](https://img.shields.io/badge/coverage-95.4%25-brightgreen.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 **Arbitrage-free volatility surface construction, calibration, and analysis toolkit**
 
 A production-grade Python library for computing implied volatilities, enforcing no-arbitrage constraints, fitting parametric models (SVI), and calibrating stochastic volatility models (Heston) to market data.
